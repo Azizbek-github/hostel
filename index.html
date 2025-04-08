@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oqtosh Hostel - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Asosiy</a></li>
+                <li><a href="#rooms">Xonalar</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#booking">Rezervatsiya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Oqtosh Hostelga Xush Kelibsiz!</h1>
+            <p>Quvnoq va qulay joy, sadoqatli mijozlar uchun eng yaxshi narxlar!</p>
+            <a href="#booking" class="btn">Rezervatsiya qilish</a>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <h2>Xonalarimiz</h2>
+        <div class="room-card">
+            <img src="images/room1.jpg" alt="Room 1">
+            <h3>Standart Xona</h3>
+            <p>2 kishilik xonalar, qulayliklar bilan ta'minlangan.</p>
+            <p><strong>Price: $30/kun</strong></p>
+        </div>
+        <div class="room-card">
+            <img src="images/room2.jpg" alt="Room 2">
+            <h3>Luks Xona</h3>
+            <p>Yuqori darajadagi xizmat va qulayliklar bilan.</p>
+            <p><strong>Price: $50/kun</strong></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Biz bilan bog'laning</h2>
+        <p>Telefon: +998 90 123 45 67</p>
+        <p>Email: info@oqtosh-hostel.uz</p>
+        <p>Ijtimoiy tarmoqlar: <a href="https://www.instagram.com/oqtosh_hostel" target="_blank">Instagram</a></p>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2>Rezervatsiya qilish</h2>
+        <form action="#">
+            <label for="name">Ismingiz:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dates">Sanalar:</label>
+            <input type="text" id="dates" name="dates" placeholder="Kirish va chiqish sanalari" required>
+
+            <button type="submit" class="btn">Rezervatsiya qilish</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Oqtosh Hostel. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,183 @@
+/* General Styles for Mobile First */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url('images/hero1.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* Rooms Section */
+.rooms, .contact, .booking {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.rooms h2, .contact h2, .booking h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.room-card {
+    display: inline-block;
+    margin: 20px;
+    width: 45%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.room-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.room-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.room-card p {
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Booking Section */
+.booking form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.booking form input, .booking form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.booking form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsivlik uchun Media Queries */
+
+/* Small devices (phones, less than 768px) */
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .hero .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .room-card {
+        width: 90%; /* Xonalar kartalari telefonlarda kengroq bo'lishi uchun */
+        margin: 20px auto;
+    }
+
+    .rooms h2, .contact h2, .booking h2 {
+        font-size: 1.8em;
+    }
+
+    .booking form {
+        padding: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and above) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.4em;
+    }
+
+    .room-card {
+        width: 45%; /* Planshet uchun xonalar kartasi */
+    }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+    .hero p {
+        font-size: 1.8em;
+    }
+}
